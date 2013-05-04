@@ -36,7 +36,7 @@
         <h1>Thanks for Downloading!</h1>
 
         <p>
-            Your Download should start immeadiately, if not: <a
+            Your Download should begin shortly, if not: <a
                 href="out/dokuwiki-<?php echo htmlspecialchars($_REQUEST['id']) ?>.tgz" id="download">click here</a>.
         </p>
     </div>
@@ -98,7 +98,18 @@
         </div>
 
         <div class="span4">
-            <h2>Donate</h2>
+            <h2>Follow Us!</h2>
+
+
+            <p><div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher"></div></p>
+
+            <p>
+                <div id="fb-root"></div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/dokuwiki" data-width="300" data-show-faces="true" data-stream="false" data-header="true"></div>
+            </p>
+
+            <p><a href="https://twitter.com/dokuwiki" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @dokuwiki</a></p>
+
         </div>
     </div>
 
@@ -111,6 +122,32 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=335827766118";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    !function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+</script>
 
 
 </body>
