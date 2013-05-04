@@ -1,0 +1,4 @@
+
+  * proofread everything
+  * create cronjobs to download current master and plugins
+  * decide how to invalidate the cache
