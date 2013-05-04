@@ -135,7 +135,6 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
-<!-- Place this tag after the last +1 button tag. -->
 <script type="text/javascript">
     (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -160,6 +159,8 @@
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, 'script', 'twitter-wjs');
+
+    <?php include('ga.js')?>
 </script>
 
 

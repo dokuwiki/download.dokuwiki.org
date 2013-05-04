@@ -240,7 +240,9 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
-
+<script type="text/javascript">
+    <?php include('ga.js')?>
+</script>
 
 </body>
 </html>
