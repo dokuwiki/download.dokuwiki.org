@@ -1,0 +1,17 @@
+In this directory should be placed:
+
+  * the extracted archives of the most recent DokuWiki releases
+    * named ''dokuwiki-version''
+  * the archives itself
+    * named ''dokuwiki-version.tgz''
+  * a nightly checkout of the master branch
+    * named ''master''
+  * symlinks pointing for the following release directories:
+    * stable
+    * rc (if any)
+    * oldstable
+  * symlinks pointing to the following release tarballs
+    * dokuwiki-stable.tgz
+    * dokuwiki-rc.tgz (if any)
+    * dokuwiki-oldstable.tgz
+
