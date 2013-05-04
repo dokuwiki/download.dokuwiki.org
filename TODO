@@ -4,3 +4,4 @@
   * decide how to invalidate the cache
   * add standard dokuwiki.org site header
   * maybe improve the design and make it less bootstrappy
+  * strip .git _test and other unwanted dirs
