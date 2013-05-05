@@ -1,4 +1,6 @@
   * proofread everything
+  * improve "Update" text, hard to understand
+  * add logo
   * create cronjobs to download current master and plugins
   * decide how to invalidate the cache
   * add standard dokuwiki.org site header
