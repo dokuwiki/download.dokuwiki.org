@@ -46,6 +46,9 @@ class Builder {
             $langs = array_filter($langs);
             $this->stripLanguages($langs);
 
+            // remove unwanted dirs
+            $this->stripUnwanted();
+
             // on update only, remove same files
             if(!empty($_REQUEST['updateonly'])){
                 $this->diffTo(realpath('src/dokuwiki/oldstable'));
@@ -104,6 +107,19 @@ class Builder {
             }
         }
         closedir($dh);
+    }
+
+    /**
+     * removes unwanted files
+     *
+     * like .git and _test dirs
+     */
+    public function stripUnwanted(){
+        $re = '/(^|\/)(\.git|_test|_cs)(\/|$)/';
+        $stripfile = preg_grep($re, array_keys($this->files));
+        foreach($stripfile as $file) {
+            unset($this->files[$file]);
+        }
     }
 
     /**
