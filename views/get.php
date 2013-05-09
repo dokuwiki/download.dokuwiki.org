@@ -24,7 +24,6 @@
 
 
 <div class="container">
-    <input type="hidden" name="do" value="download">
 
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
@@ -59,6 +58,9 @@
                     href="http://donate.dokuwiki.org" target="_blank">Paypal</a> or <a
                     href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz">Bitcoin</a>.
             </p>
+
+            <p>You may also want to check out the shop for cool <a href="http://www.splitbrain.org/shop" target="_blank">DokuWiki
+                    Merchandise</a>.</p>
 
         </div>
 
@@ -107,8 +109,6 @@
             <p>If you have any questions, check out the <a href="https://forum.dokuwiki.org/" target="_blank">user forum</a> to talk to
                 other experienced DokuWiki users.</p>
 
-            <p>You may also want to check out the shop for cool <a href="http://www.splitbrain.org/shop" target="_blank">DokuWiki
-               Merchandise</a>.</p>
         </div>
 
         <div class="span4">
@@ -135,6 +135,12 @@
 
 </div>
 <!-- /container -->
+
+<?php
+if(file_exists('../wiki/lib/tpl/dokuwiki/dwtb.html')){
+    include('../wiki/lib/tpl/dokuwiki/dwtb.html');
+}
+?>
 
 <!-- Le javascript
 ================================================== -->

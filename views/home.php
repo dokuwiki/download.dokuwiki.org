@@ -233,6 +233,12 @@
 </div>
 <!-- /container -->
 
+<?php
+    if(file_exists('../wiki/lib/tpl/dokuwiki/dwtb.html')){
+        include('../wiki/lib/tpl/dokuwiki/dwtb.html');
+    }
+?>
+
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
