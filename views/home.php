@@ -51,7 +51,7 @@
 
             <ul class="unstyled">
                 <li>
-                    <label class="radio"><input type="radio" name="version" value="nightly">Development
+                    <label class="radio"><input type="radio" name="version" value="master">Development
                         Snapshot <a href="http://github.com/splitbrain/dokuwiki/tarball/master">(direct
                             link)</a>
                         <p class="help-block"><?php echo $TPL->version('master') ?></p>
