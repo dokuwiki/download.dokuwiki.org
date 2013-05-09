@@ -1,9 +1,0 @@
-  * proofread everything
-  * improve "Update" text, hard to understand
-  * add logo
-  * create cronjobs to download current master and plugins
-  * decide how to invalidate the cache
-  * add standard dokuwiki.org site header
-  * maybe improve the design and make it less bootstrappy
-  * strip .git _test and other unwanted dirs
-  * add favicon
