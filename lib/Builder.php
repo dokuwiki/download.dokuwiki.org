@@ -17,6 +17,8 @@ class Builder {
      */
     public function process() {
         $hash = md5(print_r($_REQUEST, true));
+        $tmp  = md5(time().rand());
+        $temp = "out/$tmp-dokuwiki-$hash.tgz";
         $file = "out/dokuwiki-$hash.tgz";
 
         if(!file_exists($file)){
@@ -65,7 +67,8 @@ class Builder {
                 $this->moveBase('DokuWikiStick');
             }
 
-            $this->buildTar($file);
+            $this->buildTar($temp);
+            rename($temp, $file);
         }
 
         header('Location: index.php?do=get&id='.$hash);
