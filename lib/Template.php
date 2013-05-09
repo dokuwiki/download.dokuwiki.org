@@ -64,4 +64,8 @@ class Template {
         return $version;
     }
 
+    public function globalheader(){
+        $inc = '../../wiki/htdocs/lib/tpl/dokuwiki/dwtb.html';
+        if(file_exists($inc)) include($inc);
+    }
 }

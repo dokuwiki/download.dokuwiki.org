@@ -233,11 +233,7 @@
 </div>
 <!-- /container -->
 
-<?php
-    if(file_exists('../wiki/lib/tpl/dokuwiki/dwtb.html')){
-        include('../wiki/lib/tpl/dokuwiki/dwtb.html');
-    }
-?>
+<?php $TPL->globalheader() ?>
 
 <!-- Le javascript
 ================================================== -->
