@@ -56,7 +56,9 @@
                 <li>
                     <label class="radio"><input type="radio" name="version" value="nightly">Development
                         Snapshot <a href="http://github.com/splitbrain/dokuwiki/tarball/master">(direct
-                            link)</a></label>
+                            link)</a>
+                        <p class="help-block"><?php echo $TPL->version('master') ?></p>
+                    </label>
                 </li>
                 <?php
                 $checked = 'checked="checked"';
