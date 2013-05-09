@@ -74,7 +74,7 @@ class Builder {
             rename($temp, $file);
         }
 
-        header('Location: index.php?do=get&id='.$hash);
+        header('Location: get?id='.$hash);
     }
 
     public function printList() {

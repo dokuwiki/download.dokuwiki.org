@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule download index.php?do=download  [QSA,L]
+RewriteRule get      index.php?do=get       [QSA,L]

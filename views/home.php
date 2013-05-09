@@ -24,7 +24,7 @@
 
 
 <div class="container">
-<form action="index.php" method="post" class="dlform">
+<form action="download" method="post" class="dlform">
     <input type="hidden" name="do" value="download">
 
 
