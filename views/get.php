@@ -16,13 +16,8 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <!-- FIXME
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
-    -->
+    <link rel="apple-touch-icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/favicon.ico">
 </head>
 
 <body>
@@ -47,24 +42,24 @@
             <h2>Learn More</h2>
 
             <ul>
-                <li>Learn how to <a href="https://www.dokuwiki.org/install">install</a> or <a
-                        href="https://www.dokuwiki.org/install:upgrade">upgrade</a> DokuWiki
+                <li>Learn how to <a href="https://www.dokuwiki.org/install" target="_blank">install</a> or <a
+                        href="https://www.dokuwiki.org/install:upgrade" target="_blank">upgrade</a> DokuWiki
                 </li>
-                <li>Read the <a href="https://www.dokuwiki.org/manual">DokuWiki manual</a></li>
+                <li>Read the <a href="https://www.dokuwiki.org/manual" target="_blank">DokuWiki manual</a></li>
             </ul>
 
+            <h3>Donate</h3>
 
-            <script type="text/javascript"><!--
-                google_ad_client = "ca-pub-5892664235245840";
-                /* download.dw.org */
-                google_ad_slot = "5306362121";
-                google_ad_width = 300;
-                google_ad_height = 250;
-                //-->
-            </script>
-            <script type="text/javascript"
-                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
+            <div class="pull-right">
+                <a class="FlattrButton" style="display:none;" href="http://www.splitbrain.org/projects/dokuwiki" target="_blank"></a>
+            </div>
+
+            <p>
+                Say thanks using the flattr button or by <a href="https://www.dokuwiki.org/donate" target="_blank">donating</a> via <a
+                    href="http://donate.dokuwiki.org" target="_blank">Paypal</a> or <a
+                    href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz">Bitcoin</a>.
+            </p>
+
         </div>
 
         <div class="span4">
@@ -75,7 +70,7 @@
             <!-- Begin MailChimp Signup Form -->
             <form
                 action="http://dokuwiki.us1.list-manage.com/subscribe/post?u=72ec38d1614d3a63c1184f448&amp;id=9c27f4f01d"
-                method="post" class="form-horizontal">
+                method="post" class="form-horizontal" target="_blank">
                 <input type="hidden" name="EMAILTYPE" value="html">
 
                 <div class="control-group">
@@ -108,20 +103,32 @@
 
             </form>
             <!--End mc_embed_signup-->
+
+            <p>If you have any questions, check out the <a href="https://forum.dokuwiki.org/" target="_blank">user forum</a> to talk to
+                other experienced DokuWiki users.</p>
+
+            <p>You may also want to check out the shop for cool <a href="http://www.splitbrain.org/shop" target="_blank">DokuWiki
+               Merchandise</a>.</p>
         </div>
 
         <div class="span4">
             <h2>Follow Us!</h2>
 
 
-            <p><div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher"></div></p>
-
             <p>
-                <div id="fb-root"></div>
-                <div class="fb-like-box" data-href="https://www.facebook.com/dokuwiki" data-width="300" data-show-faces="true" data-stream="false" data-header="true"></div>
+
+            <div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher"></div>
             </p>
 
-            <p><a href="https://twitter.com/dokuwiki" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @dokuwiki</a></p>
+            <p>
+
+            <div id="fb-root"></div>
+            <div class="fb-like-box" data-href="http://www.facebook.com/dokuwiki" data-width="300"
+                 data-show-faces="true" data-stream="false" data-header="true"></div>
+            </p>
+
+            <p><a href="http://twitter.com/dokuwiki" class="twitter-follow-button" data-show-count="true"
+                  data-size="large" target="_blank">Follow @dokuwiki</a></p>
 
         </div>
     </div>
@@ -132,24 +139,31 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
-    (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    /* Google plus */
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
         po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
     })();
 
-    (function(d, s, id) {
+    /* Facebook */
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=335827766118";
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=167577225459";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
+    /* twitter */
     !function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
         if (!d.getElementById(id)) {
@@ -159,6 +173,15 @@
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, 'script', 'twitter-wjs');
+
+    /* flatter */
+    (function () {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
 
     <?php include('ga.js')?>
 </script>

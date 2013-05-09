@@ -16,13 +16,8 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <!-- FIXME
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
-    -->
+    <link rel="apple-touch-icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/favicon.ico">
 </head>
 
 <body>
@@ -43,6 +38,8 @@
         </p>
 
         <p><input type="submit" value="Download" class="btn btn-primary btn-large"></p>
+
+        <p><small>DokuWiki is available free of charge under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License Version 2</a>.</small></p>
     </div>
 
 
@@ -95,7 +92,7 @@
                 </li>
             </ul>
 
-            <h2>Update</h2>
+            <h3>Update</h3>
 
             <p>
                 Use this if you want to only download the files that have changed since the old stable version.
@@ -113,7 +110,7 @@
                 plugins or webserver components will always be included in full.
             </p>
 
-            <h2>Include Web-Server</h2>
+            <h3>Include Web-Server</h3>
 
             <p>
                 You may optionally include a minimal Webserver with PHP in your download. This is useful if for quickly
@@ -239,7 +236,7 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
