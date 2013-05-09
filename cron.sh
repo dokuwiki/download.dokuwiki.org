@@ -1,7 +1,8 @@
 #!/bin/bash
 
-DIR=`dirname "$1"`
+DIR=`dirname "$0"`
 cd "$DIR"
+pwd
 
 # pull dokuwiki core
 cd src/dokuwiki/master
