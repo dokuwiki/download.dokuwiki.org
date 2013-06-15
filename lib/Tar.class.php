@@ -151,7 +151,7 @@ class Tar {
         if($this->closed || !$this->file) throw new TarIOException('Can not read from a closed archive');
 
         $outdir = rtrim($outdir, '/');
-        io_mkdir_p($outdir);
+        @mkdir($outdir, 0777, true);
         $striplen = strlen($strip);
 
         $extracted = array();
@@ -202,7 +202,7 @@ class Tar {
 
                 $output    = "$outdir/$filename";
                 $directory = ($header['typeflag']) ? $output : dirname($output);
-                io_mkdir_p($directory);
+                @mkdir($directory, 0777, true);
 
                 // is this a file?
                 if(!$header['typeflag']) {

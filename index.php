@@ -2,6 +2,7 @@
 /**
  * simple controller for the downloader
  */
+error_reporting(E_ALL & ~E_NOTICE);
 
 switch($_REQUEST['do']){
     case 'get':

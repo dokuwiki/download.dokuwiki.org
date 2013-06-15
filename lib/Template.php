@@ -2,11 +2,13 @@
 
 class Template {
 
-    private $src = 'src/dokuwiki';
+    private $src = '';
 
     private $langnames;
 
     public function __construct() {
+        $this->src = dirname(__FILE__).'/../src/dokuwiki';
+
         /* load language names */
         $lines = file(dirname(__FILE__).'/langnames.txt');
         foreach($lines as $line) {
@@ -64,8 +66,40 @@ class Template {
         return $version;
     }
 
+    public function allrealversions() {
+        $out = array();
+        $versions = glob($this->src.'/dokuwiki-*', GLOB_ONLYDIR);
+        foreach($versions as $version){
+            $version = basename($version);
+
+            $out[$version] = $this->version($version);
+        }
+
+        arsort($out);
+        return $out;
+    }
+
+    public function versionselect($release){
+        $target = '';
+        if(is_link($this->src.'/'.$release)){
+            $target = basename(readlink($this->src.'/'.$release));
+        }
+
+        foreach($this->allrealversions() as $key => $value){
+            if($key == $target){
+                $sel = 'selected="selected"';
+            }else{
+                $sel = '';
+            }
+            echo '<option value="'.htmlspecialchars($key).'" '.$sel.'>';
+            echo $value;
+            echo '</option>';
+        }
+    }
+
+
     public function globalheader(){
-        $inc = '../../wiki/htdocs/lib/tpl/dokuwiki/dwtb.html';
+        $inc = dirname(__FILE__).'/../../wiki/htdocs/lib/tpl/dokuwiki/dwtb.html';
         if(file_exists($inc)) include($inc);
     }
 }
