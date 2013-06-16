@@ -3,9 +3,11 @@
 class Admin {
 
     private $src = '';
+    private $out = '';
 
     function __construct(){
         $this->src = dirname(__FILE__).'/../src/dokuwiki';
+        $this->out = dirname(__FILE__).'/../out';
     }
 
     function dosymlinks(){
@@ -20,6 +22,12 @@ class Admin {
                 if(preg_match('/^dokuwiki-/', $target)){
                     symlink($target, $this->src.'/'.$release);
                     symlink("$target.tgz", $this->src."/dokuwiki-$release.tgz");
+                }
+
+                // clean cache
+                $cache = glob($this->out.'/*.tgz');
+                foreach($cache as $cf){
+                    @unlink($cf);
                 }
             }
         }
