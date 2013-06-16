@@ -99,7 +99,7 @@ class Template {
 
 
     public function globalheader(){
-        $inc = dirname(__FILE__).'/../../wiki/htdocs/lib/tpl/dokuwiki/dwtb.html';
+        $inc = dirname(__FILE__).'/../../../wiki/htdocs/lib/tpl/dokuwiki/dwtb.html';
         if(file_exists($inc)) include($inc);
     }
 }
