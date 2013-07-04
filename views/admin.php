@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Download DokuWiki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Le styles -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="../style.css" rel="stylesheet">
+    <link href="https://www.dokuwiki.org/lib/exe/css.php?t=dokuwiki" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/apple-touch-icon.png" />
     <link rel="shortcut icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/favicon.ico">
 </head>
 
 <body>
 
+    <div id="dokuwiki__site"><div class="dokuwiki admin site">
 
-<div class="container">
-
-    <div class="row">
-        <div class="span6">
-            <form action="index.php" method="post" class="admin form-horizontal">
-                <input type="hidden" name="do" value="symlink">
-                <fieldset>
-                    <legend>Set Version Symlinks</legend>
-                    <div class="control-group">
-                        <label class="control-label" for="rc">RC</label>
-                        <div class="controls">
-                            <select id="rc" name="rc">
-                                <option></option>
-                                <?php $TPL->versionselect('rc'); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="stable">stable</label>
-                        <div class="controls">
-                            <select id="stable" name="stable">
-                                <option></option>
-                                <?php $TPL->versionselect('stable'); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="oldstable">oldstable</label>
-                        <div class="controls">
-                            <select id="oldstable" name="oldstable">
-                                <option></option>
-                                <?php $TPL->versionselect('oldstable'); ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <button type="submit" class="btn">Update</button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+        <div id="dokuwiki__header" class="group">
+            <h1>
+                <img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="64" height="64" alt="" />
+                Thanks for Downloading!
+            </h1>
         </div>
 
-        <div class="span6">
-            <form action="index.php" method="post" class="upload" enctype="multipart/form-data">
-                <input type="hidden" name="do" value="upload">
-                <fieldset>
-                    <legend>Upload new Version</legend>
-                    <label>File:</label>
-                    <input type="file" name="file">
-                    <span class="help-block">.tgz files *need* to contain a top directory named <code>dokuwiki-&lt;version&gt;</code>!</span>
-                    <button type="submit" class="btn">Upload</button>
-                </fieldset>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- /container -->
+        <div id="dokuwiki__content" class="wrapper group">
+            <div class="page group">
+
+
+                <div class="row">
+                    <div class="col">
+                        <form action="index.php" method="post" class="admin">
+                            <input type="hidden" name="do" value="symlink" />
+                            <fieldset>
+                                <legend>Set Version Symlinks</legend>
+                                <p>
+                                    <label for="rc">RC</label>
+                                    <select id="rc" name="rc">
+                                        <option></option>
+                                        <?php $TPL->versionselect('rc'); ?>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="stable">stable</label>
+                                    <select id="stable" name="stable">
+                                        <option></option>
+                                        <?php $TPL->versionselect('stable'); ?>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="oldstable">oldstable</label>
+                                    <select id="oldstable" name="oldstable">
+                                        <option></option>
+                                        <?php $TPL->versionselect('oldstable'); ?>
+                                    </select>
+                                </p>
+                                <p>
+                                    <button type="submit" class="btn">Update</button>
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="col">
+                        <form action="index.php" method="post" class="upload" enctype="multipart/form-data">
+                            <input type="hidden" name="do" value="upload" />
+                            <fieldset>
+                                <legend>Upload new Version</legend>
+                                <p>
+                                    <label for="file">File:</label>
+                                    <input type="file" name="file" />
+                                </p>
+                                <p class="hint">
+                                    .tgz files *need* to contain a top directory named <code>dokuwiki-&lt;version&gt;</code>!
+                                </p>
+                                <p>
+                                    <button type="submit" class="btn">Upload</button>
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div><!-- /wrapper -->
+    </div></div><!-- /site -->
+
 
 <?php $TPL->globalheader() ?>
 
@@ -89,7 +93,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
     <?php include('ga.js')?>
