@@ -1,11 +1,78 @@
-.hero-unit {
-    margin-top: 60px;
+
+#dokuwiki__header {
+    padding: 1em 0;
+    font-size: 2em;
 }
 
-.form-horizontal .control-label {
-    width: 100px;
+.intro {
+    font-size: 1.5em;
 }
 
-.form-horizontal .controls {
-    margin-left: 120px;
+.col {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    margin-left: 5%;
+    float: left;
 }
+.admin .col {
+    width: 48%;
+    margin-left: 4%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+/* show full width on smaller screens (mobile, etc) */
+@media only screen and (max-width: 600px) {
+
+.col {
+    width: auto !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    float: none !important;
+}
+
+} /* /@media */
+
+
+#dokuwiki__content ul.options {
+    list-style: none;
+    padding-left: 0;
+}
+
+#dokuwiki__content ul.options li {
+    margin: 0 0 .35em 0;
+    color: inherit;
+}
+
+.hint {
+    display: block;
+    margin-top: .35em;
+    color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    margin-bottom: 1.4em;
+}
+
+form.newsletter p,
+form.admin p,
+form.upload p {
+    margin-bottom: .7em;
+}
+
+form label {
+    display: block;
+}
+form.newsletter input[type=email],
+form.newsletter input[type=text] {
+    width: 100%;
+}
+
