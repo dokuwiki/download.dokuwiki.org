@@ -30,12 +30,14 @@
             <div class="page group">
 
 
-                <p class="intro">
-                    Here you can download the latest DokuWiki-Version. Either just click "Download" or customize the
-                    download to your likings with the options below.
-                    <input type="submit" value="Download" />
-                    <br /><small>DokuWiki is available free of charge under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License Version 2</a>.</small>
-                </p>
+                <div class="intro">
+                    <p>Here you can download the latest DokuWiki-Version. Either just click "Download" or customize the
+                    download to your likings with the options below.</p>
+
+                    <p><input type="submit" value="Download" /></p>
+
+                    <p><small>DokuWiki is available free of charge under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License Version 2</a>.</small></p>
+                </div>
 
 
                 <div class="row group">
@@ -227,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="form-actions">
+                <div class="form-actions row">
                     <button type="submit">Start Download</button>
                 </div>
 
