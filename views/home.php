@@ -92,6 +92,8 @@
                             </li>
                         </ul>
 
+                        <p>Looking for an old release?<br />Check the <a href="archive">Archive</a>.</p>
+
                         <h3>Update</h3>
 
                         <p>

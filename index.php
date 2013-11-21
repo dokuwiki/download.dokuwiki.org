@@ -10,6 +10,11 @@ switch($_REQUEST['do']){
         $TPL = new Template();
         include('views/get.php');
         break;
+    case 'archive':
+        require('lib/Template.php');
+        $TPL = new Template();
+        include('views/archive.php');
+        break;
     case 'download':
         require('lib/Builder.php');
         $builder = new Builder();
