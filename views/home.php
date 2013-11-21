@@ -97,7 +97,7 @@
                         <p>
                             Use this if you want to only download the files that have changed since the old stable version.
                             Check <a href="https://www.dokuwiki.org/install:upgrade">Upgrade Instructions</a> on how
-                            an update is done, irregardless if you download a full package or not.
+                            an update is done, regardless if you download a full package or not.
                         </p>
 
                         <label class="checkbox">
