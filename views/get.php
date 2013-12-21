@@ -100,12 +100,12 @@
                         <h2>Follow Us!</h2>
 
                         <div class="block">
-                            <div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher"></div>
+                            <div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher" data-width="274"></div>
                         </div>
 
                         <div class="block">
                             <div id="fb-root"></div>
-                            <div class="fb-like-box" data-href="http://www.facebook.com/dokuwiki" data-width="300"
+                            <div class="fb-like-box" data-href="http://www.facebook.com/dokuwiki" data-width="274"
                                  data-show-faces="true" data-stream="false" data-header="true"></div>
                         </div>
 

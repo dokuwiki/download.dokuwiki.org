@@ -32,7 +32,7 @@ class Template {
             $name = '';
             if(isset($this->langnames[$lang])) $name = ' - '.$this->langnames[$lang];
 
-            echo '<li><label class="checkbox"><input type="checkbox" name="langs[]" value="'.$lang.'" checked="checked">'.$lang.$name.'</label></li>';
+            echo '<li><label class="checkbox"><input type="checkbox" name="langs[]" value="'.$lang.'" checked="checked" /> '.$lang.$name.'</label></li>';
         }
     }
 
