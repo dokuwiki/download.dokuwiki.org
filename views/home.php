@@ -52,7 +52,11 @@
                                     <input type="radio" name="version" value="master" />
                                     Development Snapshot
                                     <a href="http://github.com/splitbrain/dokuwiki/tarball/master">(direct link)</a>
-                                    <span class="hint"><?php echo $TPL->version('master') ?></span>
+                                    <span class="hint">
+                                        <?php echo $TPL->version('master') ?>
+                                        &nbsp;
+                                        <a href="https://travis-ci.org/splitbrain/dokuwiki"><img src="https://api.travis-ci.org/splitbrain/dokuwiki.png?branch=master" style="vertical-align: text-bottom"></a>
+                                        </span>
                                 </label>
                             </li>
                             <?php
