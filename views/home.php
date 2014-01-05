@@ -55,7 +55,7 @@
                                     <span class="hint">
                                         <?php echo $TPL->version('master') ?>
                                         &nbsp;
-                                        <a href="https://travis-ci.org/splitbrain/dokuwiki"><img src="https://api.travis-ci.org/splitbrain/dokuwiki.png?branch=master" style="vertical-align: text-bottom"></a>
+                                        <a href="https://travis-ci.org/splitbrain/dokuwiki"><img src="https://api.travis-ci.org/splitbrain/dokuwiki.png?branch=master"></a>
                                         </span>
                                 </label>
                             </li>

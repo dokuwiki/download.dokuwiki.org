@@ -56,6 +56,15 @@
     color: #999;
 }
 
+.hint img {
+    vertical-align: text-bottom;
+    opacity: 0.6;
+}
+
+.hint img:hover {
+    opacity: 1;
+}
+
 .hidden {
     display: none;
 }
