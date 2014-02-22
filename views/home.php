@@ -120,7 +120,7 @@
                         <h3>Include Web-Server</h3>
 
                         <p>
-                            You may optionally include a minimal Webserver with PHP in your download. This is useful if for quickly
+                            You may optionally include a minimal Webserver with PHP in your download. This is useful for quickly
                             trying DokuWiki or for running it from an USB stick. This is recommended for personal, single-user use
                             only.
                         </p>
@@ -130,7 +130,7 @@
                                 <label class="checkbox">
                                     <input type="checkbox" name="onastick[]" value="mapache" />
                                     MicroApache (Windows)
-                                    <span class="hint">Apache 2.0.64, PHP 5.2.17, GD2 and SQLite</span>
+                                    <span class="hint">Apache 2.4.7, PHP 5.4.25, GD2 and SQLite</span>
                                 </label>
                             </li>
                         </ul>
