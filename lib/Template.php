@@ -117,7 +117,8 @@ class Template {
             }
 
             echo '<li>';
-            echo '<a href="src/dokuwiki/'.$file.'">'.$name.'</a>';
+            echo '<a href="src/dokuwiki/'.$file.'">'.$name.'</a> ';
+            echo '<span>'.md5(file_get_contents($this->src.'/'.$file)).'</span>';
             echo '</li>';
         }
         echo '</ul>';
