@@ -184,6 +184,20 @@
 
                             <li>
                                 <label class="checkbox">
+                                    <input type="checkbox" name="plugins[]" value="upgrade" />
+                                    Upgrade Plugin
+                                    <a href="https://www.dokuwiki.org/plugin:upgrade">(Learn more)</a>
+                                </label>
+
+
+                                <p class="hint">
+                                    The easiest way to upgrade DokuWiki. Downloads and install the newest stable
+                                    release with just a few clicks in the admin backend.
+                                </p>
+                            </li>
+
+                            <li>
+                                <label class="checkbox">
                                     <input type="checkbox" name="plugins[]" value="wrap" />
                                     Wrap Plugin
                                     <a href="https://www.dokuwiki.org/plugin:wrap">(Learn more)</a>
