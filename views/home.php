@@ -191,7 +191,7 @@
 
 
                                 <p class="hint">
-                                    The easiest way to upgrade DokuWiki. Downloads and install the newest stable
+                                    The easiest way to upgrade DokuWiki. Downloads and installs the newest stable
                                     release with just a few clicks in the admin backend.
                                 </p>
                             </li>
