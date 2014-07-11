@@ -34,9 +34,13 @@
                     <p>Here you can download the latest DokuWiki-Version. Either just click "Download" or customize the
                     download to your likings with the options below.</p>
 
+                    <div class="tip"><span>Tip:</span> Our partners offer <a href="https://www.dokuwiki.org/hosting">hosting with pre-installed DokuWiki</a> &ndash; no download needed.</div>
+
                     <p><input type="submit" value="Download" /></p>
 
                     <p><small>DokuWiki is available free of charge under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License Version 2</a>.</small></p>
+
+
                 </div>
 
 
