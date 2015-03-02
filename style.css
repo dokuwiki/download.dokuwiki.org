@@ -43,6 +43,14 @@
     margin-left: 0;
 }
 
+a.rss {
+    float: right;
+    line-height: 28px;
+    height: 28px;
+    padding-left: 30px;
+    background: transparent url(feed.png) left center no-repeat;
+}
+
 /* show full width on smaller screens (mobile, etc) */
 @media only screen and (max-width: 600px) {
 

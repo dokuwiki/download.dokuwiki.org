@@ -37,6 +37,8 @@
 
 
             <div class="row group">
+                <a href="rss" class="rss">Subscribe to new releases by RSS feed</a>
+
                 <?php $TPL->archivelist(); ?>
             </div>
 
