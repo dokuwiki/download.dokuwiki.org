@@ -100,6 +100,8 @@
                             </li>
                         </ul>
 
+                        <p>A summary of changes for each release can be found in the <a href="https://www.dokuwiki.org/changes">Changelog</a>.</p>
+
                         <p>Looking for an old release?<br />Check the <a href="archive">Archive</a>.</p>
 
                         <h3>Update</h3>
