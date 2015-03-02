@@ -15,6 +15,11 @@ switch($_REQUEST['do']){
         $TPL = new Template();
         include('views/archive.php');
         break;
+    case 'rss':
+        require('lib/Template.php');
+        $TPL = new Template();
+        include('views/rss.php');
+        break;
     case 'download':
         require('lib/Builder.php');
         $builder = new Builder();

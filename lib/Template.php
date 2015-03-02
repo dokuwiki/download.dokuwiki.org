@@ -104,7 +104,6 @@ class Template {
         echo '<ul>';
         foreach($files as $file) {
             $file = basename($file);
-
             if(!preg_match('/dokuwiki-(rc)?(\d\d\d\d-\d\d-\d\d)([a-z])?\.tgz/', $file, $m)) continue;
 
             $name = '<b>'.$m[2].'</b>';
@@ -122,7 +121,43 @@ class Template {
             echo '</li>';
         }
         echo '</ul>';
+    }
 
+    public function archiverss() {
+        $files = glob($this->src.'/dokuwiki-*.tgz');
+        usort($files, array($this, 'versionsort'));
+
+        echo '<?xml version="1.0" encoding="UTF-8" ?>';
+        echo '<rss version="2.0">';
+        echo '<channel>';
+        echo '  <title>DokuWiki Releases</title>';
+        echo '  <description>A list of DokuWiki releases</description>';
+        echo '  <link>http://download.dokuwiki.org</link>';
+
+        foreach($files as $file) {
+            $file = basename($file);
+            if(!preg_match('/dokuwiki-(rc)?(\d\d\d\d-\d\d-\d\d)([a-z])?\.tgz/', $file, $m)) continue;
+
+            $name = $m[2];
+            if($m[1]) {
+                $name .= ' release candidate';
+            } elseif($m[3]) {
+                $name .= ' hotfix '.$m[3];
+            } else {
+                $name .= ' stable release';
+            }
+
+            echo '<item>';
+            echo '  <title>DokuWiki '.htmlspecialchars($name).' available</title>';
+            echo '  <description>'.round(filesize($this->src.'/'.$file)/(1024*1024), 2).'MB</description>';
+            echo '  <link>'.htmlspecialchars('http://download.dokuwiki.org/src/dokuwiki/'.$file).'</link>';
+            echo '  <guid isPermaLink="false">'.htmlspecialchars($m[2]).'</guid>';
+            echo '  <pubDate>'.date('c', filemtime($this->src.'/'.$file)).'</pubDate>';
+            echo '</item>';
+        }
+
+        echo '</channel>';
+        echo '</rss>';
     }
 
     private function versionsort($a, $b) {
