@@ -50,9 +50,10 @@
                         </p>
 
                         <p>
-                            Say thanks using the flattr button or by <a href="https://www.dokuwiki.org/donate" target="_blank">donating</a> via <a
-                                href="http://donate.dokuwiki.org" target="_blank">Paypal</a> or <a
-                                href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz">Bitcoin</a>.
+                            Say thanks using the flattr button or by <a href="https://www.dokuwiki.org/donate" target="_blank">donating</a> via 
+                            <a href="http://donate.dokuwiki.org" target="_blank">Paypal</a>,
+                            <a href="https://www.patreon.com/dokuwiki" target="_blank">Patreon</a> or
+                            <a href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz">Bitcoin</a>.
                         </p>
 
                         <p>You may also want to check out the shop for cool <a href="http://www.splitbrain.org/shop" target="_blank">DokuWiki
