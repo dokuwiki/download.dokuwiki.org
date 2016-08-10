@@ -68,7 +68,7 @@
 
                         <!-- Begin MailChimp Signup Form -->
                         <form
-                            action="http://dokuwiki.us1.list-manage.com/subscribe/post?u=72ec38d1614d3a63c1184f448&amp;id=9c27f4f01d"
+                            action="https://dokuwiki.us1.list-manage.com/subscribe/post?u=72ec38d1614d3a63c1184f448&amp;id=9c27f4f01d"
                             method="post" class="newsletter" target="_blank">
                             <input type="hidden" name="EMAILTYPE" value="html" />
 
@@ -166,7 +166,7 @@
         var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
         s.type = 'text/javascript';
         s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
         t.parentNode.insertBefore(s, t);
     })();
 
