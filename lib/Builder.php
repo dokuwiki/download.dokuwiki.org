@@ -25,6 +25,7 @@ class Builder {
             // add dokuwiki itself
             $version = (string) $_REQUEST['version'];
             $version = $this->dirclean($version);
+            if($version === '') $this->abort();
             $src = realpath("src/dokuwiki/$version");
             if(!is_dir($src)) die('something went wrong');
             $this->addFolder($src);
@@ -75,6 +76,18 @@ class Builder {
         }
 
         header('Location: get?id='.$hash);
+    }
+
+    protected function abort() {
+        echo '<h1>Error</h1>';
+        echo '<p>Something went wrong building your customized DokuWiki download. Please open a bug report at
+              <a href="https://github.com/splitbrain/dokuwiki/issues">https://github.com/splitbrain/dokuwiki/issues</a></p>';
+        echo '<p>Meanwhile you can download an uncustomized package from our <a href="archive">list of releases</a>.</p>';
+        echo '<hr>';
+        echo '<h4>Debug info</h4>';
+        echo '<pre>'.htmlspecialchars(print_r($_REQUEST, true)).'</pre>';
+        echo '<pre>'.htmlspecialchars(print_r($_SERVER, true)).'</pre>';
+        exit();
     }
 
     public function printList() {
