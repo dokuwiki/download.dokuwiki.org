@@ -43,18 +43,18 @@
                             <li>Read the <a href="https://www.dokuwiki.org/manual" target="_blank">DokuWiki manual</a></li>
                         </ul>
 
-                        <h2>Donate</h2>
+                        <h2>Donate ❤️</h2>
 
-                        <p class="mediaright">
-                            <a class="FlattrButton" style="display:none;" href="http://www.splitbrain.org/projects/dokuwiki" target="_blank"></a>
-                        </p>
+                        <div class="donate">
+                            <p>Say thanks by <a href="https://www.dokuwiki.org/donate" target="_blank">donating</a> via</p>
 
-                        <p>
-                            Say thanks using the flattr button or by <a href="https://www.dokuwiki.org/donate" target="_blank">donating</a> via 
-                            <a href="http://donate.dokuwiki.org" target="_blank">Paypal</a>,
-                            <a href="https://www.patreon.com/dokuwiki" target="_blank">Patreon</a> or
-                            <a href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz">Bitcoin</a>.
-                        </p>
+                            <ul>
+                                <li><a href="http://donate.dokuwiki.org" target="_blank"><img src="img/paypal.svg" alt="">Paypal</a>,</li>
+                                <li><a href="https://www.patreon.com/dokuwiki" target="_blank"><img src="img/patreon.svg" alt="">Patreon</a>,</li>
+                                <li><a href="https://github.com/sponsors/splitbrain/" target="_blank"><img src="img/github.svg" alt="">Github Sponsors</a> or</li>
+                                <li><a href="bitcoin:1Dokuw1Ki8dGk4p2hAWZv4TwGj8Ax1Vcqz"><img src="img/bitcoin.svg" alt="">Bitcoin</a>.</li>
+                            </ul>
+                        </div>
 
                         <p>You may also want to check out the shop for cool <a href="http://www.splitbrain.org/shop" target="_blank">DokuWiki
                                 Merchandise</a>.</p>
@@ -62,39 +62,10 @@
                     </div>
 
                     <div class="col">
-                        <h2>Subscribe</h2>
-
-                        <p>Subscribe to our Newsletter to stay up to date with what happens in the DokuWiki world:</p>
-
-                        <!-- Begin MailChimp Signup Form -->
-                        <form
-                            action="https://dokuwiki.us1.list-manage.com/subscribe/post?u=72ec38d1614d3a63c1184f448&amp;id=9c27f4f01d"
-                            method="post" class="newsletter" target="_blank">
-                            <input type="hidden" name="EMAILTYPE" value="html" />
-
-                            <p>
-                                <label for="mce-EMAIL">Email Address</label>
-                                <input type="email" value="" name="EMAIL" id="mce-EMAIL" />
-                            </p>
-                            <p>
-                                <label for="mce-FNAME">First Name</label>
-                                <input type="text" value="" name="FNAME" id="mce-FNAME" />
-                            </p>
-                            <p>
-                                <label for="mce-LNAME">Last Name</label>
-                                <input type="text" value="" name="LNAME" id="mce-LNAME" />
-                            </p>
-
-                            <p>
-                                <input type="submit" value="Subscribe" name="subscribe" />
-                            </p>
-
-                        </form>
-                        <!--End mc_embed_signup-->
+                        <h2>Join the Community</h2>
 
                         <p>If you have any questions, check out the <a href="https://forum.dokuwiki.org/" target="_blank">user forum</a> to talk to
                             other experienced DokuWiki users.</p>
-
                     </div>
 
                     <div class="col">
@@ -130,16 +101,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
-    /* Google plus */
-    (function () {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-    })();
-
     /* Facebook */
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -160,16 +121,6 @@
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, 'script', 'twitter-wjs');
-
-    /* flatter */
-    (function () {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-
     <?php include('ga.js')?>
 </script>
 
