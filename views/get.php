@@ -72,18 +72,8 @@
                         <h2>Follow Us!</h2>
 
                         <div class="block">
-                            <div class="g-plus" data-href="//plus.google.com/106967944317856873610" data-rel="publisher" data-width="274"></div>
+                            <img src="img/mastodon.svg" width="64" alt="" style="float: left"> Follow us on Mastodon: <a href="https://phpc.social/@dokuwiki" target="_blank">@dokuwiki@php.social</a>
                         </div>
-
-                        <div class="block">
-                            <div id="fb-root"></div>
-                            <div class="fb-like-box" data-href="http://www.facebook.com/dokuwiki" data-width="274"
-                                 data-show-faces="true" data-stream="false" data-header="true"></div>
-                        </div>
-
-                        <p><a href="http://twitter.com/dokuwiki" class="twitter-follow-button" data-show-count="true"
-                              data-size="large" target="_blank">Follow @dokuwiki</a></p>
-
                     </div>
                 </div>
 
@@ -101,26 +91,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript">
-    /* Facebook */
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=167577225459";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    /* twitter */
-    !function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + '://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }
-    }(document, 'script', 'twitter-wjs');
     <?php include('ga.js')?>
 </script>
 
