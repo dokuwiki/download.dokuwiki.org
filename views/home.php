@@ -58,9 +58,7 @@
                                     <a href="http://github.com/splitbrain/dokuwiki/tarball/master">(direct link)</a>
                                     <span class="hint">
                                         <?php echo $TPL->version('master') ?>
-                                        &nbsp;
-                                        <a href="https://travis-ci.org/splitbrain/dokuwiki"><img src="https://api.travis-ci.org/splitbrain/dokuwiki.png?branch=master"></a>
-                                        </span>
+                                    </span>
                                 </label>
                             </li>
                             <?php
