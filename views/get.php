@@ -10,6 +10,7 @@
 
     <link rel="apple-touch-icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/apple-touch-icon.png" />
     <link rel="shortcut icon" href="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/favicon.ico">
+    <script type="module" src="https://unpkg.com/mastodon-widget"></script>
 </head>
 
 <body>
@@ -72,7 +73,9 @@
                         <h2>Follow Us!</h2>
 
                         <div class="block">
-                            <img src="img/mastodon.svg" width="64" alt="" style="float: left"> Follow us on Mastodon: <a href="https://phpc.social/@dokuwiki" target="_blank">@dokuwiki@phpc.social</a>
+                            <mastodon-widget account="dokuwiki@phpc.social" limit="0">
+                                <img src="img/mastodon.svg" width="64" alt="" style="float: left"> Follow us on Mastodon: <a href="https://phpc.social/@dokuwiki" target="_blank">@dokuwiki@phpc.social</a>
+                            </mastodon-widget>
                         </div>
                     </div>
                 </div>
