@@ -72,7 +72,7 @@
                         <h2>Follow Us!</h2>
 
                         <div class="block">
-                            <img src="img/mastodon.svg" width="64" alt="" style="float: left"> Follow us on Mastodon: <a href="https://phpc.social/@dokuwiki" target="_blank">@dokuwiki@php.social</a>
+                            <img src="img/mastodon.svg" width="64" alt="" style="float: left"> Follow us on Mastodon: <a href="https://phpc.social/@dokuwiki" target="_blank">@dokuwiki@phpc.social</a>
                         </div>
                     </div>
                 </div>
