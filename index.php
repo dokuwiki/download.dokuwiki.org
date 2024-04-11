@@ -20,6 +20,11 @@ switch($_REQUEST['do']){
         $TPL = new Template();
         include('views/rss.php');
         break;
+    case 'version':
+        require('lib/Template.php');
+        $TPL = new Template();
+        include('views/version.php');
+        break;
     case 'download':
         require('lib/Builder.php');
         $builder = new Builder();
