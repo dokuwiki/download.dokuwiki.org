@@ -14,6 +14,7 @@ foreach (['master', 'rc', 'stable', 'oldstable'] as $type) {
         'version' => $version,
         'date' => $date,
         'name' => $name,
+        'type' => $type,
     ];
 }
 
