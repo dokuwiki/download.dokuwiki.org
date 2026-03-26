@@ -23,7 +23,7 @@ class Builder {
 
         if(!file_exists($file)){
             // add dokuwiki itself
-            $version = (string) $_REQUEST['version'];
+            $version = (string) $_REQUEST['version'] ?? '';
             $version = $this->dirclean($version);
             if($version === '') $this->abort();
             $src = realpath("src/dokuwiki/$version");
@@ -31,7 +31,7 @@ class Builder {
             $this->addFolder($src);
 
             // add plugins
-            foreach((array) $_REQUEST['plugins'] as $plugin){
+            foreach((array) ($_REQUEST['plugins'] ?? []) as $plugin){
                 $plugin = $this->dirclean($plugin);
                 $src = realpath("src/plugins/$plugin");
                 if(!is_dir($src)) continue;
@@ -40,7 +40,7 @@ class Builder {
             }
 
             // remove unwanted languages
-            $langs = $_REQUEST['langs'];
+            $langs = $_REQUEST['langs'] ?? [];
             $langs = array_map(array($this, 'dirclean'), $langs);
             $langs[] = 'en';
             $langs = array_unique($langs);

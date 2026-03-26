@@ -107,9 +107,9 @@ class Template {
             if(!preg_match('/dokuwiki-(rc)?(\d\d\d\d-\d\d-\d\d)([a-z])?\.tgz/', $file, $m)) continue;
 
             $name = '<b>'.$m[2].'</b>';
-            if($m[1]) {
+            if($m[1] ?? false) {
                 $name .= ' release candidate';
-            } elseif($m[3]) {
+            } elseif($m[3] ?? false) {
                 $name .= ' hotfix '.$m[3];
             } else {
                 $name .= ' stable release';

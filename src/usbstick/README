@@ -1,1 +1,4 @@
+Note: do NOT have the dokuwiki folder in the mapache folder. It will be added by the build process and it's default index.php will fuck with the build
+
+
 more choices for other OSes should be added here

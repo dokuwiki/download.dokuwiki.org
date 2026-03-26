@@ -4,7 +4,7 @@
  */
 error_reporting(E_ALL & ~E_NOTICE);
 
-switch($_REQUEST['do']){
+switch($_REQUEST['do'] ?? '') {
     case 'get':
         require('lib/Template.php');
         $TPL = new Template();
