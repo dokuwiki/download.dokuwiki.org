@@ -134,7 +134,7 @@
                                 <label class="checkbox">
                                     <input type="checkbox" name="onastick[]" value="mapache" />
                                     MicroApache (Windows 64bit)
-                                    <span class="hint">Apache 2.4.58, PHP 8.2.13
+                                    <span class="hint">Apache 2.4.69, PHP 8.4.27
                                         (bz2, gd, intl, ldap, mbstring, opcache, openssl, pdo_sqlite)
                                     </span>
                                 </label>
